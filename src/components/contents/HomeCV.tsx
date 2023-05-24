@@ -1,3 +1,5 @@
+import { TypeAnimation } from 'react-type-animation';
+
 const HomeCV = () => {
     return(
         <>
@@ -14,10 +16,28 @@ const HomeCV = () => {
                         <img src="../../public/img/hero/img.jpg" alt="hero" />
                         </div>
                         <div className="name_holder">
-                        <h3>Alan <span>Michaelis</span></h3>
+                        <h3><span>Phí Văn Nam</span></h3>
                         </div>
                         <div className="text_typing">
-                        <p>I'm a <span className="arlo_tm_animation_text_word"></span></p>
+                        <p>I'm a 
+                            &nbsp;
+                            <TypeAnimation
+                                sequence={[
+                                    'Freelancer', // Types 'One'
+                                    2000, // Waits 1s
+                                    'UI/UX Designer', // Deletes 'One' and types 'Two'
+                                    2000, // Waits 2s
+                                    'Web Developer', // Types 'Three' without deleting 'Two'
+                                    2000,
+                                    () => {
+                                     // Place optional callbacks anywhere in the array
+                                    }
+                                ]}
+                                wrapper="span"
+                                cursor={true}
+                                repeat={Infinity}
+                                />
+                        </p>
                         </div>
                     </div>
                     </div>
