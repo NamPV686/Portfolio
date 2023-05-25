@@ -1,10 +1,12 @@
+import desktopLogo from '@/assets/img/logo/desktop-logo.png'
+
 const LeftPart = () => {
     return(
         <>
              <div className="arlo_tm_leftpart_wrap">
                 <div className="leftpart_inner">
                 <div className="logo_wrap">
-                    <a href="#"><img src="../public/img/logo/desktop-logo.png" alt="desktop-logo" /></a>
+                    <a href="#"><img src={desktopLogo} alt="desktop-logo" /></a>
                 </div>
                 <div className="menu_list_wrap">
                     <ul className="anchor_nav">
